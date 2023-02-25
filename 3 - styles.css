@@ -1,0 +1,270 @@
+
+
+
+h1 {
+    color: rgb(51, 0, 0);
+    font-size: 40px;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    color: coral;
+    background-color: black;
+    border-color: crimson;
+    font-size: 20px;
+}
+
+/*  Seletores
+    class  -> são clases, são como um cep, ela serve para identificar varios elementos.
+              ou seja, varios elementos HTML podem usar a mesma classe, e conseguimos 
+              estilizar o css
+
+    ID -> IDENTIFICADOR UNICO. ele seria como um cpf, ele serve para identificar apenas
+          um elemento. ou seja, você só pode usar um ID especifico uma unica vez para sua página HTML.
+
+*/
+
+#titulo {
+    color: red;
+    font-size: 20px;
+}
+
+#paragrafo {
+    color: cadetblue;
+    font-size: 20px;
+}
+
+#botao{
+    color: black;
+    background-color: rgb(239, 253, 46);
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+/* 
+    resumo sobre seletor com class
+*/
+
+.titulo {
+    color: darkmagenta;
+    font-size: 30px;
+}
+
+.botao {
+    color: cornflowerblue;
+    background-color: brown;
+    font-size: 20px;
+}
+
+
+/* Resumo sobre Unidade de médidas 
+    Absolutas
+        px -> pixel
+
+
+    Relativas
+        % - Calcula tamanho relativa ao elemento pai
+        vw (view width) 1vw é 1% da largura da janela do navegador
+        vh (view height) 1vg é 1% da altura da janela do navegador
+        em - é uma unidade relativa ao elemento pai
+        rem - é uma unidade de medida relativa ao elemento raiz.
+*/
+
+#alex {
+    background: #ff00ff;
+    width: 200px;
+    height: 200px;
+}
+
+#filho-de-alex {
+    background: #00ffff;
+    width: 90%;
+    height: 90%;
+}
+
+
+/* resumo sobre texto */
+
+.aulatexto {
+    color: #ff00ff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    line-height: 30px; /* espaçamento */
+    letter-spacing: 20px; /* distanciamento entre as letras */
+    word-spacing: 10px; /* espaçamento entre as palavras */
+    text-align: center;  /* alinhamento do texto */
+    text-shadow: 6px 6px 6px #fff000; /* sombreamento */
+    text-decoration: overline; /* linha abaixo do texto */
+    text-transform: capitalize; /* todas iniciais maiusculas */
+
+}
+
+/* resumo margin e padding 
+    margin -> ajusta externo
+    padding -> ajusta interno
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+#box {
+    width: 50px;
+    height: 50px;
+    background: #ff00ff;
+    margin: 200px 20px 20px 40px;
+    border: 5px solid #fff000
+    
+}
+
+/* box sizing 
+    Vai ajustar tudo para manter o padrão da div que eu estabelecer.
+*/
+
+
+/*  Resumo da aula de display
+    
+    (block) 
+        vem com padrão: div, section, p, h1, h2, url, li, article...
+
+    ocupa 100% da largura do elemento pai
+    sempre ocupa toda a sua linha
+    altura definida de acordo com o conteúdo
+    podemos definir height e width
+    podemos definir valores de margin
+
+
+    (inline)
+    vem como padrão a, span, b, i...
+
+    elemento em linha
+    não permite alterar height e width
+    não podemos definir valores e margin top e bottom
+    ganha comportamento de uma palavra 
+
+
+    (inline-block)
+
+    elemento em linha, porém com característica do display block 
+    altura e largura podem ser alteradas
+*/
+
+.box {
+    background: #fff000;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.box-2 {
+    background: #ff00ff;
+}
+
+
+ /* resumo aula important-*/
+
+ .testeaula{
+    color: #f0f !important;
+    color:#fff000;
+ }
+
+
+ /* aula de position */
+
+ .pai {
+    background: #ff0000;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    position: fixed;
+    top: 20px;
+    
+ }
+
+ .filho {
+    background: #fff000;
+    width: 100px;
+    height: 50px;
+ }
+
+ /* resumo da aula pseudo elemto , servi para trocar algumas coisas dentro dos elementos*/
+
+ input {
+    border: 1px solid #ffff00
+ }
+
+ input::placeholder {
+    color:blue
+ }
+
+ p::first-letter {
+    color:#ff0000
+ }
+
+ h1::after {
+    content: "😋";
+ }
+
+ h1::before{
+    content: "😋"
+ }
+
+ /* resumo da aula pseudo classe
+ 
+ :active -> quando o elemento está ativo, ou seja sendo presionado
+ :visited -> seleciona o link que foi visitado
+ :hover -> quando o mouse passa em cima do elemento
+ :checked -> usado radio / checkbox / select
+ :disabled -> elemento desabilitado / button / input
+ :enabled -> elemento está habilitado
+ :focus -> é aplicado quando um elemento recebe foco, o que pode ocorrer quando o usuario seleciona o elemento
+ :read-only -> seleciona input ou textarea que são apenas leitura
+ :empty -> elemento que não tem filho
+
+
+ :first-child -> primeiro filho / ex: primeira li de uma ul/ primeiro span de uma div
+ :first-of-type -> primeiro elemento do seu tipo entre os filhos de seu elemento pai
+ :last-child -> ultimo filho
+ :nth-last-of-type -> utlimo elemento de seu tipo entre os filhos do seu elemento pai
+ :not() ->estiliza os elementos, isto o que está dentro do ()
+ :nth-child() -> seleciona o elemento baseado na sua posição. ex: nth-child(3)
+ :nth-last-child() -> seleciona elemento baseado na sua posição, contanto de trás para frente.
+
+ */
+
+ /* (Resumo da aula responsividade)
+    
+ Servi para deixar um site adaptavel para celular, tablete etc.
+
+orientação da tela (orientation)
+
+portrait -> altura maior que largura
+landscape -> lagura mair que altura
+
+@media screen and (max-width: 1px) {}
+
+*/
+
+ .responsividade {
+    background: #ff0000;
+    width: 400px;
+    height: 400px;
+ }
+
+@media(min-width: 200px){
+
+    div {
+        background: #ff00ff;
+        width: 200px;
+        height: 200px;
+    }
+
+}
