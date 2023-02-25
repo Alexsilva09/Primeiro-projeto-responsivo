@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./3 - styles.css">  <!-- real=" stylesheet" -> é a folha de estilos-->
+    <title>css</title>
+</head>
+
+<body>
+
+<!-- teste sem seletor-->
+    
+ <h1> Minha primeira aula de css </h1>
+ <p> dddsdsa ds  ds ds dsds d d ds dsa asd asd asd s </p>
+ <button> Clica em mim </button>
+<br>
+    <!-- teste com seletor id -->
+
+        <h1 id="titulo"> teste com seletores </h1>
+        <p id="paragrafo"> testando seletores esse vai ser com o id </p>
+        <button id="botao"> clique aqui </button>
+
+        <!-- teste com seletor class -->
+
+            <h1 class="titulo"> teste com seletores </h1>
+            <p class="titulo"> testando seletores esse vai ser com o class </p>
+            <button class="botao"> clique aqui </button>
+
+    <div id="alex">
+        <div id="filho-de-alex"></div>
+
+
+        <!-- Textos -->
+
+        <h1 class="aulatexto">Aula de textos</h1>
+        <p class="aulatexto"> Aula aula ula </p>
+
+    </div>
+   
+    <!-- margin e padding-->
+
+    <div id="box">
+        Alex
+    </div>
+
+
+    <!-- resumo aula de display-->
+
+    <div class="box">
+        minha div 1
+    </div>
+
+    <div class="box box-2">
+        minha div 2
+    </div>
+
+    <div class="box box-3">
+        minha div 3
+    </div>
+
+
+    <!--Resumo aula important -->
+
+    <h1 class="testeaula">Alex silva</h1>
+
+
+
+    <!--Resumo aula de position
+
+    position: static (padrão) - não aceita valores de top, bottom, right e left.
+    position: fixed - fixa o elemento na tela
+    position: sticky - age como um adesivo a posição inicial dele
+    position: relative - posição relativa a posição inicial dele
+    position: absolute - posição absoluta(fixa) a algum elemento ou a página
+                        se não tiver pai / pai for static -> posiciona referente a página 
+                        se o pai não for static -> posiciona referente ao pai 
+                    
+    Propriedades:
+        top
+        bottom
+        left
+        right
+
+ -->
+
+ <div class="pai"> aula position 
+
+    <div class="filho">aula position 2 </div>
+
+ </div>
+
+<!--  Aula pseudo elementos -->
+
+<input placeholder="Digique aqui">
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vero at magnam, et dolorem facere aut consequuntur necessitatibus totam praesentium facilis consequatur iusto quas odit, corporis sequi porro quaerat. Facere?</p>
+<h1> Alex Silva </h1>
+
+
+
+
+<!-- RESUMO DA AULA DE PSEUDO CLASSE 
+
+ :active -> quando o elemento está ativo, ou seja sendo presionado
+ :visited -> seleciona o link que foi visitado
+ :hover -> quando o mouse passa em cima do elemento
+ :checked -> usado radio / checkbox / select
+ :disabled -> elemento desabilitado / button / input
+ :enabled -> elemento está habilitado
+ :focus -> é aplicado quando um elemento recebe foco, o que pode ocorrer quando o usuario seleciona o elemento
+ :read-only -> seleciona input ou textarea que são apenas leitura
+ :empty -> elemento que não tem filho
+
+
+ :first-child -> primeiro filho / ex: primeira li de uma ul/ primeiro span de uma div
+ :first-of-type -> primeiro elemento do seu tipo entre os filhos de seu elemento pai
+ :last-child -> ultimo filho
+ :nth-last-of-type -> utlimo elemento de seu tipo entre os filhos do seu elemento pai
+ :not() ->estiliza os elementos, isto o que está dentro do ()
+ :nth-child() -> seleciona o elemento baseado na sua posição. ex: nth-child(3)
+ :nth-last-child() -> seleciona elemento baseado na sua posição, contanto de trás para frente.
+
+-->
+
+
+<!-- Resumo da aula responsividade 
+    
+Servi para deixar um site adaptavel para celular, tablete etc.
+
+-->
+
+<div class="responsividade">
+
+</div>
+
+
+</body>
+
+</html>
