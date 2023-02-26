@@ -91,3 +91,49 @@ img {
     height: 460px;
     margin-left: 70px;
 }
+
+@media screen and (max-width: 591px){
+
+    .rodape {
+        display: none;
+    }
+
+    button {
+        position: relative;
+        left: 400px;
+    }
+
+    .caixa2 {
+        position: absolute;
+        top: 83px;
+        left: 40px;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.596154px;
+        color: #161A49;
+        width: 300px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #4B505A;
+        height: 300px;
+        width: 300px;
+    }
+
+    img {
+        margin-top: 459px;
+        width: 279px;
+        height: 268px;
+        margin-left: 120px;
+
+    }
+}
